@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="./index.js"></script>
+    <title>Search Functinality using JS</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="menu">
+        <input
+          type="text"
+          name="search_box"
+          id="search_box"
+          onkeyup="search(this)"
+          placeholder="Search..."
+        />
+        <span class="addData" onclick="addNewData()"
+          ><a href="#inp_box">
+            <img src="./4174487.png" alt="" />
+          </a>
+        </span>
+      </div>
+      <table border="0" class="collection" id="tb">
+        <thead>
+          <tr>
+            <th>Sr.No.</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Contact</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          <tr class="rows">
+            <td>1.</td>
+            <td class="data-name" id="name">sample</td>
+            <td>sample@gmail.com</td>
+            <td>9000000009</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <form class="inputData" id="inp_box">
+      <label for="name"
+        >Name : <input type="text" class="add_inp" id="addName"
+      /></label>
+      <label for="email"
+        >Email : <input type="text" class="add_inp" id="addEmail"
+      /></label>
+      <label for="Contact"
+        >Contact : <input type="text" class="add_inp" id="addContact"
+      /></label>
+      <submit class="btn" onclick="addData()">Add Data</submit>
+    </form>
+  </body>
+</html>
